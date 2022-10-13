@@ -1,0 +1,202 @@
+{% load static %}
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Documentation</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <input class="form-check-input switch" type="checkbox" role="switch" id="dayNight">
+  <label class="day-night" for="dayNight"></label>
+
+  <div class="wrapper-main">
+    <div class="container-fluid header-main shadow-sm">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex py-2">
+            <div class="d-flex align-items-center">
+              <a href="javascript:void(0);" class="nav_icon px-3">
+                <img src="{% static 'img/menu.png'%}" width="19" alt="">
+                <img src="{% static 'img/menu_.png'%} " width="19" alt="">
+              </a>
+              <a href="#" class="brand">
+                <img src="{% static 'img/sqa_logo.png'%}" width="170" alt="">
+                <img src="{% static 'img/sqa_logo_.png'%}" width="170" alt="">
+              </a>
+            </div>
+            <div class="ms-auto me-5">
+              <div class="search me-3">
+                <div class="form-outer">
+                  <input type="search" class="form-control" id="search_global" placeholder="Search">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0 content-main">
+      <div class="d-flex">
+        <div class="sidebar-left d-lg-block" style="display: none;">
+          <div class="p-4">
+            <ul class="list-unstyled accord">
+              <li><a href="#">SimplifyQA Tool</a></li>
+              <li><a href="#" class="has_ul">Admin Module</a>
+                <ul class="list-unstyled ms-3">
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Client</a></li>
+                  <li><a href="#">Branch</a></li>
+                  <li><a href="#">Role</a></li>
+                  <li><a href="#">Release</a></li>
+                  <li><a href="#">Iteration</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="has_ul">My Board</a>
+                <ul class="list-unstyled ms-3">
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Client</a></li>
+                  <li><a href="#">Branch</a></li>
+                  <li><a href="#">Role</a></li>
+                  <li><a href="#">Release</a></li>
+                  <li><a href="#">Iteration</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="has_ul">Common Features</a>
+                <ul class="list-unstyled ms-3">
+                  <li><a href="#">Project</a></li>
+                  <li><a href="#">Client</a></li>
+                  <li><a href="#">Branch</a></li>
+                  <li><a href="#">Role</a></li>
+                  <li><a href="#">Release</a></li>
+                  <li><a href="#">Iteration</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container w-100" style="max-width: unset;">
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-xl-9">
+                  <div class="content-main p-5">
+                    <!-- info -->
+                    <div class="alert alert-info">
+                      <p class="m-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+                    </div>
+                    <!-- content -->
+                    <div id="section1"></div>
+                    <h2>Release Notes</h2>
+                    <h3>5.9.0</h3>
+                    <h4>New Features</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut?</p>
+                    <ul class="list-unstyled bullets">
+                      <li>Introduced options to import Selenium 4 test scripts into Recorder and export test scripts from Recorder to Selenium 4 languages: Java, Python, C#, Ruby.</li>
+                      <li>Introduced the new collapsible navigation bar.</li>
+                      <li>Introduced options to navigate between cells using Tab key and Shift + Tab key.</li>
+                      <li>Introduced the ability to import Global Variables profiles into Recorder.</li>
+                    </ul>
+                    <div id="section2"></div>
+                    <figure><img src="{%static 'img/image_.jpg'%}" width="787" alt="" class="img-fluid"></figure>
+                    <div id="section3"></div>
+                    <h3>5.9.0</h3>
+                    <h4>New Features</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut?</p>
+                    <ul class="list-unstyled bullets">
+                      <li>Introduced options to import Selenium 4 test scripts into Recorder and export test scripts from Recorder to Selenium 4 languages: Java, Python, C#, Ruby.</li>
+                      <li>Introduced the new collapsible navigation bar.</li>
+                      <li>Introduced options to navigate between cells using Tab key and Shift + Tab key.</li>
+                      <li>Introduced the ability to import Global Variables profiles into Recorder.</li>
+                    </ul>
+                    <div id="section4"></div>
+                    <h3>5.9.0</h3>
+                    <h4>New Features</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut?</p>
+                    <ul class="list-unstyled bullets">
+                      <li>Introduced options to import Selenium 4 test scripts into Recorder and export test scripts from Recorder to Selenium 4 languages: Java, Python, C#, Ruby.</li>
+                      <li>Introduced the new collapsible navigation bar.</li>
+                      <li>Introduced options to navigate between cells using Tab key and Shift + Tab key.</li>
+                      <li>Introduced the ability to import Global Variables profiles into Recorder.</li>
+                    </ul>
+                    <div id="section5"></div>
+                    <h3>5.9.0</h3>
+                    <h4>New Features</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut?</p>
+                    <ul class="list-unstyled bullets">
+                      <li>Introduced options to import Selenium 4 test scripts into Recorder and export test scripts from Recorder to Selenium 4 languages: Java, Python, C#, Ruby.</li>
+                      <li>Introduced the new collapsible navigation bar.</li>
+                      <li>Introduced options to navigate between cells using Tab key and Shift + Tab key.</li>
+                      <li>Introduced the ability to import Global Variables profiles into Recorder.</li>
+                    </ul>
+                    <div id="section6"></div>
+                    <h3>5.9.0</h3>
+                    <h4>New Features</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis aliquid commodi quisquam totam blanditiis inventore officiis nihil deserunt repellat eos et, eveniet illum, voluptatibus recusandae cupiditate omnis repellendus ad ut?</p>
+                    <ul class="list-unstyled bullets">
+                      <li>Introduced options to import Selenium 4 test scripts into Recorder and export test scripts from Recorder to Selenium 4 languages: Java, Python, C#, Ruby.</li>
+                      <li>Introduced the new collapsible navigation bar.</li>
+                      <li>Introduced options to navigate between cells using Tab key and Shift + Tab key.</li>
+                      <li>Introduced the ability to import Global Variables profiles into Recorder.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-none d-xl-block">
+                  <div class="sidebar-right">
+                    <div class="p-5">
+                      <ul class="list-unstyled">
+                        <li><a href="#section1">Licensing Basics</a></li>
+                        <li><a href="#section2">Basic DAI Licenses</a></li>
+                        <li><a href="#section3">Hosting DAI in Cloud</a></li>
+                        <li><a href="#section4">DAI Cloud Licenses</a></li>
+                        <li><a href="#section5">Licensing Scenarios</a>
+                          <ul class="list-unstyled">
+                            <li><a href="#section5-1">Scenario 1</a></li>
+                            <li><a href="#section5-2">Scenario 1</a></li>
+                            <li><a href="#section5-3">Scenario 1</a></li>
+                            <li><a href="#section5-4">Scenario 1</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#section6">Licensing Basics</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="{%static 'js/vendor/modernizr-3.11.2.min.js'%}"></script>
+  <script src="{%static 'js/vendor/jquery-3.4.1.min.js'%}"></script>
+  <script src="{%static 'js/plugins.js'%}"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <script src="{%static 'js/main.js'%}"></script>
+
+</body>
+
+</html>
