@@ -1,0 +1,63 @@
+{% extends 'base1.html' %}
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    {% block head %}
+    {% endblock head %}
+</head>
+
+<body>
+    {% block body%} {% endblock body%}
+    {% block body1%}
+<div class="container-fluid px-0 content-main">
+    
+        <div class="container-fluid px-0 content-main">
+          <div class="container w-100" style="max-width: unset;">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-xl-9">
+                    <div class="content-main p-5">
+                      <!-- info -->
+                      <div class="alert alert-info">
+                        <p class="m-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+                      </div>
+                      <!-- content -->
+                      <div id="section1"></div>
+                      {% for v in version %}
+                          <h2>Release Notes</h2>
+                          <h3>{{v.version}}</h3>
+                          <h4>{{v.release_title}}</h4>
+                          <p>{{v.content|safe}}</p>
+  
+                      {% endfor %}
+  
+                     
+                    </div>
+                  </div>
+                  
+                  <div class="col-xl-3 d-none d-xl-block">
+                    <div class="sidebar-right">
+                      <div class="p-5">
+                        <ul class="list-unstyled">
+                        {% for v in version %}
+                          <li><a href="#section1">{{v.version}}</a></li>
+                        {% endfor %}
+                        </ul>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </body>
+    {% endblock body1%}
+
