@@ -5,4 +5,4 @@ from qahome.models import Data
 # View for index
 def index(request):
     version =  Data.objects.all().order_by('version')[::-1]  #ordering in order to reflect new changes first 
-    return render(request, 'index.html',{'version': version})
+    return render(request, 'newindex.html',{'version': version})
